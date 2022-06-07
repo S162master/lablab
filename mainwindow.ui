@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 170, 127);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QTableWidget" name="TableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 85, 127);
+border-radius: 10px;
+color: rgb(0, 255, 0);
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="max">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>570</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(170, 85, 127);
+border-radius: 10px;
+color: rgb(0, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="med">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>570</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(170, 85, 127);
+border-radius: 10px;
+color: rgb(0, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="min">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>570</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(170, 85, 127);
+border-radius: 10px;
+color: rgb(0, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="linePathFile">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>50</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 255);
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameregion">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>130</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 255);
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="numbercolomn">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>400</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 255);
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_calculations">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>530</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background: rgb(170, 255, 161);
+border-radius: 30px;
+}
+QPushButton::hover{
+background: rgb(29, 255, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string>Вычислить данные</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_loaddata">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>170</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background: rgb(170, 255, 161);
+border-radius: 4px;
+}
+QPushButton::hover{
+background: rgb(29, 255, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string>Загрузить данные</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_openfile">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background: rgb(170, 255, 161);
+border-radius: 4px;
+}
+QPushButton::hover{
+background: rgb(29, 255, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string>Открыть файл</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_colomn">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>360</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+border-radius: 10px;
+</string>
+    </property>
+    <property name="text">
+     <string>          Номер колонки</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_max">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>520</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 0);
+border-radius: 15px;
+</string>
+    </property>
+    <property name="text">
+     <string>                                    Максимум</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_median">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>520</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 0);
+border-radius: 15px;
+</string>
+    </property>
+    <property name="text">
+     <string>                                   Медиана</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_min">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 0);
+border-radius: 15px;
+</string>
+    </property>
+    <property name="text">
+     <string>                              Минимум</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_region">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>90</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+border-radius: 10px;
+</string>
+    </property>
+    <property name="text">
+     <string>      Название региона</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>993</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
