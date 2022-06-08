@@ -27,12 +27,5 @@ enum variants{
       alldata* massivdata;
       size_t size = 0;
       double* maxminavg;
-      тип Work_table();
-      тип DrawRez();
-      тип DrawGrid();
-      тип DrawGraf();
-      тип DrawInscription();
-      тип drawValue();
-
       };
 #endif // STRUCT_H

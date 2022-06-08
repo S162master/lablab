@@ -4,11 +4,11 @@
 
 void MainWindow::Work_table(){
     ui->TableWidget->setRowCount(information.size);
-    ui->TableWidget->setColumnCount(7);
+    ui->TableWidget->setColumnCount(7);//делаем таблицу
     ui->TableWidget->setHorizontalHeaderLabels(QStringList()<<"Year"<<"Region"<<"Npg"<<"Birth_rate"<<"Death_rate"<<"Gdw"<<"Urbanization");
     if (information.size == 0)
         return;
-    for (int i = 0; i < information.size; i++){
+    for (int i = 0; i < information.size; i++){//заносим данные
         for(int j = 0; j < 7; j++){
             switch (j) {
             case 0:

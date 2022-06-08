@@ -34,13 +34,13 @@ private slots:
 private:
     Ui::MainWindow *ui;
     dat information ;
-    void DrawGrid(QPainter *paint,double shag);
-    void DrawGraf(QPainter *paint,double shag);
-    void DrawRez();
-    void DrawInscription(QPainter *paint,double shag);
-    void drawValue(QPainter *paint,double shag);
-    int Create_table(QList<Region>* list);
 
+    void DrawGrid(QPainter * paint,double shag);
+        void DrawGraf(QPainter * paint,double shag);
+        void DrawRez();
+        void DrawInscription(QPainter * paint,double shag);
+        void drawValue(QPainter *paint,double shag);
+        void Work_table();
 };
 
 #endif // MAINWINDOW_H

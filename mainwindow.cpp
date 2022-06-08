@@ -21,26 +21,26 @@ MainWindow::~MainWindow()
 void MainWindow::on_btn_openfile_clicked()
 {
     QString path_file;
-    if (ui->linePathFile->text() == ""){
+    if (ui->LinePathFile->text() == ""){
        path_file = QFileDialog::getOpenFileName(this, tr("Open File"), "C://", "All files(*.*);;Table File(*.csv");
-       ui->linePathFile->setText(path_file);
+       ui->LinePathFile->setText(path_file);
     }
 }
 
 
 void MainWindow::on_btn_loaddata_clicked()//слот под кнопку загрузки
 {
-    if ((ui->nameregion->text() == "") or (ui->linePathFile->text() == "")){
-        if (ui->nameregion->text() == ""){
+    if ((ui->NameRegion->text() == "") or (ui->LinePathFile->text() == "")){
+        if (ui->NameRegion->text() == ""){
             QMessageBox::information(this,"окно","пустой регион");
         }
-        if (ui->linePathFile->text() == ""){
+        if (ui->LinePathFile->text() == ""){
             QMessageBox::information(this,"окно","пустой регион");
         }
     }else{
         if(information.size != 0)free(information.massivdata);
-        information.linePathFile = ui->linePathFile->text();
-        information.lineNameRegion= ui->nameregion->text();
+        information.linePathFile = ui->LinePathFile->text();
+        information.lineNameRegion= ui->NameRegion->text();
         information.workfile = variants::readfile;
         SinglePointOfEmpty(&information);
         Work_table();
@@ -52,10 +52,10 @@ void MainWindow::on_btn_loaddata_clicked()//слот под кнопку заг�
 
 void MainWindow::on_pushButton_calculations_clicked()
 {
-    if (ui->numbercolomn->text() == "" or ui->numbercolomn->text() != "3" or ui->numbercolomn->text() != "4" or ui->numbercolomn->text() == "5" or ui->numbercolomn->text() != "6" or ui->numbercolomn->text() != "7"){
+    if (ui->NameRegion->text() == "" or ui->NameRegion->text() != "3" or ui->NameRegion->text() != "4" or ui->NameRegion->text() == "5" or ui->NameRegion->text() != "6" or ui->NameRegion->text() != "7"){
         QMessageBox::information(this,"окно","пустой регион");
     }else{
-        information.stolb = ui->numbercolomn->text();
+        information.stolb = ui->NameRegion->text();
         information.workfile = variants::maxandmin;
         information.maxminavg = (double*)calloc(3, sizeof(double));
         SinglePointOfEmpty(&information);

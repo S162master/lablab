@@ -3,8 +3,8 @@
 
 void minmaxavg(dat* information){
     vector<double> sort_list;
-    for(int i=0;i < information->size;i++){
-        if (information->stolb.toStdString()=="3")
+    for(int i=0;i < information->size;i++){//все элементы
+        if (information->stolb.toStdString()=="3")//когда 3 берет значение
             sort_list.push_back(information->massivdata[i]._npg);
         else if (information->stolb.toStdString()=="4")
             sort_list.push_back(information->massivdata[i]._birth_rate);
